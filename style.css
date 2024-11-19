@@ -1,0 +1,31 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-style: hidden;
+  padding: 15px;
+  text-align: center;
+  border-spacing: 30px;
+}
+tr:nth-child(even) {
+  background-color: rgb(226, 222, 222);
+}
+
+body {
+  margin: 300px;
+  margin-top: auto;
+}
+.rating span {
+  font-size: 25px;
+  cursor: pointer;
+  color: gainsboro;
+}
+.rating span.active {
+  color: #ffc400;
+}
+#displayRating {
+  font-size: large;
+  margin: 10px;
+  color: green;
+}

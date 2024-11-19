@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+     <script src="script.js"></script>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <fieldset>
+        <legend style="font-weight: bolder">Survey Form</legend>
+      <form action="sample.txt">
+    
+      <br />
+      <br />
+      <label style="font-weight: bold">Name </label>
+      <input type="text" placeholder="Enter Your First Name" required />
+      <input type="text" placeholder="Enter Your Last Name" required />
+      <br />
+      <br />
+      <label style="font-weight: bold">Email</label>
+      <input type="text" placeholder="Enter Your Email Address"  required/>
+      <br />
+      <br />
+      <label style="font-weight: bold"  >Your Experience</label>
+    
+      <br />
+      <div class="rating">
+        <span
+          onclick="processRating(this)"
+          id="star-1"
+          data-index="1"
+          data-status="0"
+          >★</span
+        >
+        <span
+          onclick="processRating(this)"
+          id="star-2"
+          data-index="2"
+          data-status="0"
+          >★</span
+        >
+        <span
+          onclick="processRating(this)"
+          id="star-3"
+          data-index="3"
+          data-status="0"
+          >★</span
+        >
+        <span
+          onclick="processRating(this)"
+          id="star-4"
+          data-index="4"
+          data-status="0"
+          >★</span
+        >
+        <span
+          onclick="processRating(this)"
+          id="star-5"
+          data-index="5"
+          data-status="0"
+          >★</span
+        >
+      </div>
+      <div id="displayRating"></div>
+
+  
+      <h4>How satisfied are you with</h4>
+      <table>
+        <tr>
+          <th></th>
+          <th>Very Unsatisfied</th>
+          <th>Unsatisfied</th>
+          <th>Neutral</th>
+          <th>satisfied</th>
+          <th>Very Much satisfied</th>
+        </tr>
+        <tr>
+          <td style="text-align: left">Purchase</td>
+          <td><input type="radio" name="Purchase" /></td>
+          <td><input type="radio" name="Purchase" /></td>
+          <td><input type="radio" name="Purchase" /></td>
+          <td><input type="radio" name="Purchase" /></td>
+          <td><input type="radio" name="Purchase" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Service</td>
+          <td><input type="radio" name="Service" /></td>
+          <td><input type="radio" name="Service" /></td>
+          <td><input type="radio" name="Service" /></td>
+          <td><input type="radio" name="Service" /></td>
+          <td><input type="radio" name="Service" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Over All Company</td>
+          <td><input type="radio" name="Over All Company" /></td>
+          <td><input type="radio" name="Over All Company" /></td>
+          <td><input type="radio" name="Over All Company" /></td>
+          <td><input type="radio" name="Over All Company" /></td>
+          <td><input type="radio" name="Over All Company" /></td>
+        </tr>
+      </table>
+      <h4 style="text-align: left">How likely are you to</h4>
+      <table>
+        <tr>
+          <th></th>
+          <th>Very Unlikely</th>
+          <th>Unlikely</th>
+          <th>Neutral</th>
+          <th>likely</th>
+          <th>Very likely</th>
+        </tr>
+        <tr>
+          <td style="text-align: left">Buy from us again</td>
+          <td><input type="radio" name="Buy from us again" /></td>
+          <td><input type="radio" name="Buy from us again" /></td>
+          <td><input type="radio" name="Buy from us again" /></td>
+          <td><input type="radio" name="Buy from us again" /></td>
+          <td><input type="radio" name="Buy from us again" /></td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Recommended Our Products to others</td>
+          <td>
+            <input type="radio" name="Recommended Our Products to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Products to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Products to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Products to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Products to others" />
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Recommended Our Company to others</td>
+          <td>
+            <input type="radio" name="Recommended Our Company to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Company to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Company to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Company to others" />
+          </td>
+          <td>
+            <input type="radio" name="Recommended Our Company to others" />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <br />
+
+      <label style="font-weight: bold"
+        >Additional Comments or suggestions</label
+      >
+      <br />
+      <br />
+      <textarea
+        cols="100"
+        name="commentText"
+        rows="5"
+        style="text-align: center"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" />
+    </fieldset>
+    <script>
+    
+    </script>
+    </form>
+  </body>
+</html>
